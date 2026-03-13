@@ -1,0 +1,181 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+header {
+  text-align: center;
+  padding-bottom: 32px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 32px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--heading);
+  margin-bottom: 16px;
+}
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  font-size: 0.95rem;
+  color: var(--text-light);
+}
+
+.contact-info a {
+  color: var(--text-light);
+}
+
+.contact-info a:hover {
+  color: var(--primary);
+}
+
+section {
+  margin-bottom: 32px;
+}
+
+section h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--heading);
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--primary);
+  margin-bottom: 16px;
+}
+
+.summary-text {
+  color: var(--text);
+  line-height: 1.7;
+}
+
+.summary-text strong {
+  color: var(--heading);
+}
+
+.education-item,
+.experience-item,
+.project-item,
+.award-item {
+  margin-bottom: 16px;
+}
+
+.education-item:last-child,
+.experience-item:last-child,
+.project-item:last-child,
+.award-item:last-child {
+  margin-bottom: 0;
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.item-title {
+  font-weight: 600;
+  color: var(--heading);
+}
+
+.item-date {
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+.item-subtitle {
+  color: var(--text-light);
+  font-size: 0.95rem;
+  margin-top: 2px;
+}
+
+.item-description {
+  margin-top: 8px;
+  color: var(--text);
+  font-size: 0.95rem;
+}
+
+.experience-list {
+  list-style: disc;
+  margin-left: 20px;
+  margin-top: 8px;
+}
+
+.experience-list li {
+  margin-bottom: 4px;
+  color: var(--text);
+  font-size: 0.95rem;
+}
+
+.coursework {
+  margin-top: 16px;
+  padding: 16px;
+  background: var(--bg-alt);
+  border-radius: 8px;
+}
+
+.coursework-title {
+  font-weight: 600;
+  color: var(--heading);
+  margin-bottom: 8px;
+}
+
+.coursework-list {
+  color: var(--text);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.skills-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.skill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: baseline;
+}
+
+.skill-category {
+  font-weight: 600;
+  color: var(--heading);
+  min-width: 150px;
+}
+
+.skill-items {
+  color: var(--text);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .contact-info {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .item-header {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .skill-row {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .skill-category {
+    min-width: auto;
+  }
+}
